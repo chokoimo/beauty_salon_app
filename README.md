@@ -32,5 +32,5 @@ php artisan config:cache
 
 6. migrationを走らせる
 ```
-php artisan migarate
+php artisan migrate
 ```# beauty_salon_app
