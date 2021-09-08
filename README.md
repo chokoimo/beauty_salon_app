@@ -12,7 +12,7 @@ bin/start
 
 3. phpコンテナに入る
 ```
-docker exec -it sample_app_php bash
+docker exec -it beauty_salon_app bash
 ```
 
 4. .envを書き換える docker-compose.ymlを参照する
@@ -20,7 +20,7 @@ docker exec -it sample_app_php bash
 DB_CONNECTION=mysql
 DB_HOST=db
 DB_PORT=3306
-DB_DATABASE= sample_db
+DB_DATABASE= beauty_salon_app_db
 DB_USERNAME=docker
 DB_PASSWORD=docker
 ```
