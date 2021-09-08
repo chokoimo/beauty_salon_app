@@ -1,6 +1,5 @@
 #!/bin/bash
 
 docker-compose up -d
-docker exec -it sample_app_php bash -c "npm run watch"
+docker exec -it beauty_salon_app bash -c "npm run watch"
 trap "docker-compose stop" 0
-
