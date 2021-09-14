@@ -15,8 +15,8 @@ class CreateReservesTable extends Migration
     {
         Schema::create('reserves', function (Blueprint $table) {
             $table->id();
-            $table->id('user_id');
-            $table->id('menu_id');
+            // $table->id('user_id');
+            // $table->id('menu_id');
             $table->date('reservation_date');
             $table->timestamps();
         });

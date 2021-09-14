@@ -19,7 +19,7 @@ class CreateShopsTable extends Migration
             $table->string('shops_name');
             $table->string('address');
             $table->string('tel');
-            $table->id('user_id');
+            // $table->id('user_id');
             $table->timestamps();
         });
     }
