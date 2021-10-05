@@ -30,4 +30,15 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'mailgun' => [
+        'domain' => env('MAILGUN_DOMAIN'),
+        'secret' => env('MAILGUN_SECRET'),
+        'endpoint' => env('MAILGUN_ENDPOINT', 'api.mailgun.net'),
+    ],
+
+    'openweathermap' => [
+        'key' => env('OPEN_WHATHER_MAP_API_KEY'),
+        'url' => env('OPEN_WHATHER_MAP_URL'),
+    ]
+
 ];
