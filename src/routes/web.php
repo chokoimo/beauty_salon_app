@@ -13,5 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-Route::get('/', 'WeatherAPIController@weatherData'); // 追加
+Auth::routes();
