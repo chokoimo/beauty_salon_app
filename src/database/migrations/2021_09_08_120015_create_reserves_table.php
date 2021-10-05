@@ -14,11 +14,14 @@ class CreateReservesTable extends Migration
     public function up()
     {
         Schema::create('reserves', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->foreignId('user_id');
-            $table->foreignId('menu_id');
+            $table->Increments('id');
+            $table->integer('user_id')->unsigned();
+            $table->integer('menu_id')->unsigned();
             $table->date('reservation_date');
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('menu_id')->references('id')->on('menus');
         });
     }
 
