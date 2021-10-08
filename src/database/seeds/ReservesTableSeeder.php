@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\Model;
 
 class ReservesTableSeeder extends Seeder
 {
@@ -12,6 +13,8 @@ class ReservesTableSeeder extends Seeder
      */
     public function run()
     {
+        Model::unguard();
+
         DB::table('reserves')->insert([
             [
                 'reservation_date' => 20211011,
@@ -31,8 +34,8 @@ class ReservesTableSeeder extends Seeder
                 'menu_id' => 3,
             ],
         ]);
-        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
-        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
-        DB::statement('SET FOREIGN_KEY_CHECKS=2;');
+
+
+        Model::reguard();
     }
 }
